@@ -15,5 +15,5 @@ Upon completion, the system will:
 - **Description:** A platform to enhance communication, course management, and notifications within a university or school campus, integrating web and mobile applications.
 
 ## Documentation Links
-- [System Specification](SPECIFICATION.md)
-- [C4 Architecture Design](ARCHITECTURE.md)
+- [System Specification](Specification.md)
+- [C4 Architecture Design](Architecture.md)
