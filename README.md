@@ -2,7 +2,6 @@
 
 The **Smart Campus Management System** is a digital platform designed to streamline administrative tasks and communication within a university or school environment. It integrates web and mobile applications to enhance the student, faculty, and admin experience by providing real-time access to schedules, course management, notifications, and resource allocation.
 
-## What It Will Do Once Completed
 Upon completion, the system will:
 - Provide students with a mobile app to access their schedules, receive important notifications, and communicate with faculty.  
 - Enable faculty members to manage courses, student records, and send announcements through a web-based dashboard.  
