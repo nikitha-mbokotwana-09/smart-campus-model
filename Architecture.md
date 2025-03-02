@@ -22,12 +22,12 @@
 2. **Web Dashboard → Notification System**  
    - The **Web Dashboard** triggers notifications and alerts through the **Notification System** (e.g., sending a message to students about a schedule change or deadline).  
    - Relationship: **Web Dashboard → Notification System** ("Triggers notifications for schedule updates, deadlines, and alerts")
-3. **Faculty → SmartCampusDb**  
+3. **Faculty → VCampusDb**  
    - **Faculty** access the **Campus Database** to view and update student records, courses, and other relevant data.  
-   - Relationship: **Faculty → SmartCampusDb** ("Reads and writes student and course data")
-4. **Mobile App → SmartCampusDb**  
+   - Relationship: **Faculty → VCampusDb** ("Reads and writes student and course data")
+4. **Mobile App → VCampusDb**  
    - **Mobile App** retrieves data such as schedules, notifications, and other student-related information from the **Campus Database**.  
-   - Relationship: **Mobile App → SmartCampusDb** ("Reads student data, schedules, and notifications")
+   - Relationship: **Mobile App → VCampusDb** ("Reads student data, schedules, and notifications")
 5. **Mobile App → Notification System**  
    - **Mobile App** receives notifications from the **Notification System** (e.g., real-time notifications about course updates, events, etc.).  
    - Relationship: **Mobile App → Notification System** ("Receives real-time notifications")
@@ -40,9 +40,9 @@
 8. **Mobile App → External Email Service**  
    - Although **Mobile App** primarily receives real-time notifications, it may also have an integration for email notifications related to important events or updates.  
    - Relationship: **Mobile App → External Email Service** ("Receives email notifications if enabled")
-9. **SmartCampusDb → AnalyticsDb**  
+9. **VCampusDb → AnalyticsDb**  
    - The **Campus Database** feeds data into the **Analytics Database** for analysis and reporting on system performance, student behavior, and operational insights.  
-   - Relationship: **SmartCampusDb → AnalyticsDb** ("Feeds data into analytics for performance evaluation")
+   - Relationship: **VCampusDb → AnalyticsDb** ("Feeds data into analytics for performance evaluation")
 
 
 ```mermaid
