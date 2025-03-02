@@ -1,6 +1,6 @@
-## Project Title: Smart Campus Management System
+# Project Title: Smart Campus Management System
 
-## Domain: Education (University/School Campus)
+# Domain: Education (University/School Campus)
 
 ## Problem Statement
 Many educational institutions struggle with inefficient administrative processes, scattered communication, and lack of a centralized system for managing student records, schedules, and notifications. This project aims to provide a Smart Campus Management System that integrates student profiles, course schedules, faculty management, notifications, and resource allocation in a single platform.
