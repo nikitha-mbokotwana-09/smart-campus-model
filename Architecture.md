@@ -1,4 +1,4 @@
-## Smart Campus Management System
+## V Campus Management System
 
 ### System Context:
 - **Students** use the **Mobile App** to access schedules and notifications.
@@ -47,34 +47,34 @@
 
 ```mermaid
 C4Context
-  title System Context Diagram for Smart Campus Management System
+  title System Context Diagram for V Campus Management System
 
-  Enterprise_Boundary(smartCampus, "SmartCampusBoundary") {
+  Enterprise_Boundary(vCampus, "VCampusBoundary") {
     Person(student, "Student", "Accesses schedules, receives notifications, and interacts with faculty via the mobile app.")
     Person(faculty, "Faculty", "Manages courses, interacts with students, and monitors schedules through the web dashboard.")
     Person(admin, "Administrator", "Oversees the system, manages user roles, and allocates resources.")
 
     System(WebDashboard, "Web Dashboard", "A comprehensive platform for admins and faculty to manage campus operations.")
     System(MobileApp, "Student Mobile App", "Allows students to view schedules, receive notifications, and interact with faculty.")
-    SystemDb(SmartCampusDb, "Campus Database", "Stores student records, course schedules, faculty information, and resource allocation data.")
+    SystemDb(vCampusDb, "Campus Database", "Stores student records, course schedules, faculty information, and resource allocation data.")
     System(NotificationSystem, "Notification System", "Sends alerts about schedule changes, deadlines, and important events.")
   }
 
   Rel(student, MobileApp, "Uses to access schedules and notifications")
   Rel(faculty, WebDashboard, "Uses to manage courses and interact with students")
   Rel(admin, WebDashboard, "Uses to manage system settings, user roles, and resource allocation")
-  Rel(WebDashboard, SmartCampusDb, "Reads from and writes to", "HTTPS")
+  Rel(WebDashboard, vCampusDb, "Reads from and writes to", "HTTPS")
   Rel(MobileApp, NotificationSystem, "Receives notifications from", "WebSocket")
   Rel(WebDashboard, NotificationSystem, "Uses for sending alerts", "REST API")
-  Rel(WebDashboard, SmartCampusDb, "Manages course and resource data with", "HTTPS")
-  Rel(NotificationSystem, SmartCampusDb, "Fetches data for notifications", "REST API")
+  Rel(WebDashboard, vCampusDb, "Manages course and resource data with", "HTTPS")
+  Rel(NotificationSystem, vCampusDb, "Fetches data for notifications", "REST API")
 
   UpdateElementStyle(student, $fontColor="green", $bgColor="lightgrey", $borderColor="green")
   UpdateElementStyle(faculty, $fontColor="blue", $bgColor="lightblue", $borderColor="blue")
   UpdateElementStyle(admin, $fontColor="red", $bgColor="lightyellow", $borderColor="red")
   UpdateElementStyle(WebDashboard, $bgColor="lightgray", $borderColor="gray")
   UpdateElementStyle(MobileApp, $bgColor="lightgreen", $borderColor="darkgreen")
-  UpdateElementStyle(SmartCampusDb, $bgColor="lightblue", $borderColor="blue")
+  UpdateElementStyle(vCampusDb, $bgColor="lightblue", $borderColor="blue")
   UpdateElementStyle(NotificationSystem, $bgColor="lightyellow", $borderColor="yellow")
 
   UpdateLayoutConfig($c4ShapeInRow="3", $c4BoundaryInRow="1")

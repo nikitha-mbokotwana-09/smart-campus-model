@@ -1,4 +1,4 @@
-# Project Title: Smart Campus Management System
+# Project Title: V Campus Management System
 
 ## Domain: Education (University/School Campus)
 
